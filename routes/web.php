@@ -6,6 +6,9 @@ use App\Http\Controllers\NoteController;
 // Route::get('/notes', function () use ($notes) {
 //     return $notes;
 // });
+Route::get('/chips', function () {
+    return ('chips');
+});
 
 Route::get('/note/{index?}', [NoteController::class, 'show']);
 
